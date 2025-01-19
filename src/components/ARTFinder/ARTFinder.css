@@ -1,0 +1,98 @@
+/* ArtFinder Page Styles */
+
+.artfinder {
+    padding: 2rem;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.artfinder__hero {
+    margin-bottom: 2rem;
+}
+
+.artfinder__title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-foreground);
+    animation: slideInFromTop 1.2s ease-out;
+}
+
+.artfinder__subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary-foreground);
+    animation: fadeIn 2s ease-in;
+}
+
+.artfinder__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.artfinder__card {
+    background-color: var(--secondary-background);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artfinder__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.artfinder__image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    animation: zoomIn 1s ease;
+}
+
+.artfinder__card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--primary-foreground);
+}
+
+.artfinder__card-description {
+    font-size: 1rem;
+    color: var(--secondary-foreground);
+}
+
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
