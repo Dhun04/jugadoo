@@ -5,8 +5,8 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import ARTFinder from './pages/ARTFinder/ARTFinder';
 
-import TranslatorPage from './pages/translator/translator';
-import SoulBuddy from './pages/soulbuddy/soulbuddy';
+import TranslatorPage from './pages/translator/Translator';
+import SoulBuddy from './pages/soulbuddy/Soulbuddy';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Tarot from './pages/Tarot/Tarot';
